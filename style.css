@@ -314,9 +314,13 @@ footer a {
         box-shadow: none;
     }
 
-    main {
+    body:not(.home-page) .container main {
         padding: 40px 20px;
         text-align: center;
+    }
+
+    .home-page .container {
+        min-height: calc(100vh - 20px);
     }
 
     .home-grid {
