@@ -307,6 +307,23 @@ footer a {
     body {
         padding: 10px;
         justify-content: flex-start;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    input, textarea, input::placeholder, textarea::placeholder {
+        font-size: 1rem;
     }
 
     .container {
@@ -335,7 +352,15 @@ footer a {
 
     nav a {
         padding: 20px 25px;
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    button, .button {
+        font-size: 0.9rem;
+    }
+
+    .work-item h3 {
+        font-size: 1.1rem;
     }
 
     .form-row {
