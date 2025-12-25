@@ -11,18 +11,26 @@
     <meta property="og:url" content="https://dirkornee.nl/nl/contact.html">
     <meta property="og:title" content="Contact | Dirk Ornee">
     <meta property="og:description" content="Neem gerust contact op voor sessies, mixing of andere vragen.">
-    <meta property="og:image" content="https://dirkornee.nl/assets/logo/Logo%20Black.png">
+    <meta property="og:image" content="https://dirkornee.nl/assets/logo/logo-black.png">
+    <meta property="og:image:width" content="1162">
+    <meta property="og:image:height" content="1152">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dirkornee.nl/nl/contact.html">
-    <meta property="twitter:title" content="Contact | Dirk Ornee">
-    <meta property="twitter:description" content="Neem gerust contact op voor sessies, mixing of andere vragen.">
-    <meta property="twitter:image" content="https://dirkornee.nl/assets/logo/Logo%20Black.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dirkornee.nl/nl/contact.html">
+    <meta name="twitter:title" content="Contact | Dirk Ornee">
+    <meta name="twitter:description" content="Neem gerust contact op voor sessies, mixing of andere vragen.">
+    <meta name="twitter:image" content="https://dirkornee.nl/assets/logo/logo-black.png">
+
+    <!-- Hreflang for multi-language SEO -->
+    <link rel="alternate" hreflang="en" href="https://dirkornee.nl/en/contact.html">
+    <link rel="alternate" hreflang="nl" href="https://dirkornee.nl/nl/contact.html">
+    <link rel="alternate" hreflang="x-default" href="https://dirkornee.nl/">
+
     <link rel="canonical" href="https://dirkornee.nl/nl/contact.html">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/Logo White.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/Logo White.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/Logo White.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/logo-white.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/logo-white.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/logo-white.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
@@ -40,18 +48,12 @@
     <a href="contact.html" class="active"><i class="fas fa-envelope"></i></a>
     <a href="instagram.html"><i class="fab fa-instagram"></i></a>
 </nav>
-<script>
-    function setLanguage(lang) {
-        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        window.location.href = '../' + lang + '/' + currentPage;
-    }
-</script>
+<script src="../script.js"></script>
 <div class="container">
 
     <main>
         <h1>Neem contact op</h1>
-        <h4 style="margin-bottom: 20px;">Neem gerust contact op voor sessies, mixing of andere vragen.</h4>
+        <h4 class="contact-intro">Neem gerust contact op voor sessies, mixing of andere vragen.</h4>
 
         <form id="contact-form">
             <div class="form-row">

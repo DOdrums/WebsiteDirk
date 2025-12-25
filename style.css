@@ -222,6 +222,10 @@ h2 {
 }
 
 /* Contact Page */
+.contact-intro {
+    margin-bottom: 20px;
+}
+
 form {
     display: grid;
     gap: 15px;

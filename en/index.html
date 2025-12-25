@@ -11,18 +11,26 @@
     <meta property="og:url" content="https://dirkornee.nl/en/">
     <meta property="og:title" content="Dirk Ornee | Musician and Mixing Engineer">
     <meta property="og:description" content="Official website of Dirk Ornee, musician and mixing engineer.">
-    <meta property="og:image" content="https://dirkornee.nl/assets/logo/Logo%20Black.png">
+    <meta property="og:image" content="https://dirkornee.nl/assets/logo/logo-black.png">
+    <meta property="og:image:width" content="1162">
+    <meta property="og:image:height" content="1152">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dirkornee.nl/en/">
-    <meta property="twitter:title" content="Dirk Ornee | Musician and Mixing Engineer">
-    <meta property="twitter:description" content="Official website of Dirk Ornee, musician and mixing engineer.">
-    <meta property="twitter:image" content="https://dirkornee.nl/assets/logo/Logo%20Black.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dirkornee.nl/en/">
+    <meta name="twitter:title" content="Dirk Ornee | Musician and Mixing Engineer">
+    <meta name="twitter:description" content="Official website of Dirk Ornee, musician and mixing engineer.">
+    <meta name="twitter:image" content="https://dirkornee.nl/assets/logo/logo-black.png">
+
+    <!-- Hreflang for multi-language SEO -->
+    <link rel="alternate" hreflang="en" href="https://dirkornee.nl/en/">
+    <link rel="alternate" hreflang="nl" href="https://dirkornee.nl/nl/">
+    <link rel="alternate" hreflang="x-default" href="https://dirkornee.nl/">
+
     <link rel="canonical" href="https://dirkornee.nl/en/">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/Logo White.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/Logo White.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/Logo White.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/logo-white.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/logo-white.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/logo-white.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
@@ -40,13 +48,7 @@
     <a href="contact.html"><i class="fas fa-envelope"></i></a>
     <a href="instagram.html"><i class="fab fa-instagram"></i></a>
 </nav>
-<script>
-    function setLanguage(lang) {
-        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        window.location.href = '../' + lang + '/' + currentPage;
-    }
-</script>
+<script src="../script.js"></script>
 <div class="container">
 
     <main>
@@ -62,7 +64,7 @@
                 </p>
             </div>
             <div class="home-image">
-                <img src="../assets/images/CousinHatfield_6481 klein.jpeg" alt="Dirk Ornee" class="profile-img">
+                <img src="../assets/images/cousinhatfield-6481-klein.jpeg" alt="Dirk Ornee" class="profile-img">
             </div>
         </div>
     </main>
