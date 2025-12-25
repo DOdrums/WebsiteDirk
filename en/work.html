@@ -48,7 +48,13 @@
     <a href="contact.html"><i class="fas fa-envelope"></i></a>
     <a href="instagram.html"><i class="fab fa-instagram"></i></a>
 </nav>
-<script src="../script.js"></script>
+<script>
+    function setLanguage(lang) {
+        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        window.location.href = '../' + lang + '/' + currentPage;
+    }
+</script>
 <div class="container">
 
     <main>
