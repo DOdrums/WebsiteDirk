@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work | Dirk Ornee</title>
-    <meta name="description" content="A showcase of music I've worked on as a drummer and sound engineer.">
+    <title>Werk | Dirk Ornee</title>
+    <meta name="description" content="Een overzicht van muziek waaraan ik heb gewerkt als drummer en sound engineer.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dirkornee.com/work.html">
-    <meta property="og:title" content="Work | Dirk Ornee">
-    <meta property="og:description" content="A showcase of music I've worked on as a drummer and sound engineer.">
-    <meta property="og:image" content="https://dirkornee.com/assets/images/CousinHatfield_6481%20klein.jpeg">
+    <meta property="og:url" content="https://dirkornee.nl/nl/work.html">
+    <meta property="og:title" content="Werk | Dirk Ornee">
+    <meta property="og:description"
+          content="Een overzicht van muziek waaraan ik heb gewerkt als drummer en sound engineer.">
+    <meta property="og:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dirkornee.com/work.html">
-    <meta property="twitter:title" content="Work | Dirk Ornee">
-    <meta property="twitter:description" content="A showcase of music I've worked on as a drummer and sound engineer.">
-    <meta property="twitter:image" content="https://dirkornee.com/assets/images/CousinHatfield_6481%20klein.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/Logo White.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/Logo White.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/Logo White.png">
-    <link rel="stylesheet" href="style.css">
+    <meta property="twitter:url" content="https://dirkornee.nl/nl/work.html">
+    <meta property="twitter:title" content="Werk | Dirk Ornee">
+    <meta property="twitter:description"
+          content="Een overzicht van muziek waaraan ik heb gewerkt als drummer en sound engineer.">
+    <meta property="twitter:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
+    <link rel="canonical" href="https://dirkornee.nl/nl/work.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/Logo White.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/Logo White.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/Logo White.png">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
           rel="stylesheet">
 </head>
-<body>
+<body class="work-page">
+<div class="lang-switcher" aria-label="Language Selector">
+    <a href="#" class="active" onclick="setLanguage('nl')">NL</a>
+    <span>|</span>
+    <a href="#" onclick="setLanguage('en')">EN</a>
+</div>
 <nav>
     <a href="index.html"><i class="fas fa-home"></i></a>
     <a href="work.html" class="active"><i class="fas fa-folder"></i></a>
     <a href="contact.html"><i class="fas fa-envelope"></i></a>
     <a href="instagram.html"><i class="fab fa-instagram"></i></a>
 </nav>
+<script>
+    function setLanguage(lang) {
+        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        window.location.href = '../' + lang + '/' + currentPage;
+    }
+</script>
 <div class="container">
 
     <main>
-        <h1>Work</h1>
+        <h1>Werk</h1>
         <div class="work-intro">
-            <h4>A showcase of music I've worked on as a drummer and sound engineer.</h4>
+            <h4>Een overzicht van muziek waaraan ik heb gewerkt als drummer en sound engineer.</h4>
         </div>
         <div class="work-grid">
             <div class="work-item">
                 <h3>New Sound Jazz Machine</h3>
-                <p>Drums by Dirk Ornee, <a href="https://www.newsoundjazzmachine.nl/" target="_blank">visit
+                <p>Drums door Dirk Ornee, <a href="https://www.newsoundjazzmachine.nl/" target="_blank">bezoek
                     website</a></p>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/s8_gKmqOCv0?si=T8KyRTwvNgIlwBMS"
@@ -56,7 +71,7 @@
 
             <div class="work-item">
                 <h3>Lix</h3>
-                <p>Mastered by Dirk Ornee</p>
+                <p>Gemasterd door Dirk Ornee</p>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/NxPrIqjcn4w?si=D9LCfyof5SAmlp5m"
                             title="YouTube video player" frameborder="0"
@@ -67,9 +82,8 @@
 
             <div class="work-item">
                 <h3>Trip the light</h3>
-                <p>Soulful and funky wedding band, <a href="https://www.love-sound.nl/artiest/trip-the-light/"
-                                                      target="_blank">book
-                    here</a>
+                <p>Soulvolle en funky bruiloftsband, <a href="https://www.love-sound.nl/artiest/trip-the-light/"
+                                                        target="_blank">boek hier</a>
                 </p>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8drEG5UsmJc?si=Amso5I-eUWY1VIBW"
@@ -81,7 +95,7 @@
 
             <div class="work-item">
                 <h3>Groovy Rutte</h3>
-                <p>Silly drum video by Dirk Ornee</p>
+                <p>Grappige drumvideo door Dirk Ornee</p>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/LJz-FxgSFj0?si=nElb6J4ODUkmraWP"
                             title="YouTube video player" frameborder="0"

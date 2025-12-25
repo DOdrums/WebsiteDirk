@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirk Ornee | Musician and Mixing Engineer</title>
+    <meta name="description" content="Official website of Dirk Ornee, musician and mixing engineer.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dirkornee.nl/en/">
+    <meta property="og:title" content="Dirk Ornee | Musician and Mixing Engineer">
+    <meta property="og:description" content="Official website of Dirk Ornee, musician and mixing engineer.">
+    <meta property="og:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dirkornee.nl/en/">
+    <meta property="twitter:title" content="Dirk Ornee | Musician and Mixing Engineer">
+    <meta property="twitter:description" content="Official website of Dirk Ornee, musician and mixing engineer.">
+    <meta property="twitter:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
+    <link rel="canonical" href="https://dirkornee.nl/en/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/Logo White.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/Logo White.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/Logo White.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+          rel="stylesheet">
+</head>
+<body class="home-page">
+<div class="lang-switcher" aria-label="Language Selector">
+    <a href="#" onclick="setLanguage('nl')">NL</a>
+    <span>|</span>
+    <a href="#" class="active" onclick="setLanguage('en')">EN</a>
+</div>
+<nav>
+    <a href="index.html" class="active"><i class="fas fa-home"></i></a>
+    <a href="work.html"><i class="fas fa-folder"></i></a>
+    <a href="contact.html"><i class="fas fa-envelope"></i></a>
+    <a href="instagram.html"><i class="fab fa-instagram"></i></a>
+</nav>
+<script>
+    function setLanguage(lang) {
+        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        window.location.href = '../' + lang + '/' + currentPage;
+    }
+</script>
+<div class="container">
+
+    <main>
+        <div class="home-grid">
+            <div class="home-text">
+                <h1>Dirk Ornee</h1>
+                <h2>Musician and Mixing Engineer</h2>
+                <p>After studying jazz drums in Enschede, the Netherlands, I have been a gigging drummer for over 10
+                    years. I have played with various bands and artists like Dual City Concert Band, Supermoon, Julie
+                    Huard, Millenium Jazz Orchestra and more. Currently holding down the drum chair with <a
+                            href="https://www.newsoundjazzmachine.nl/" target="_blank">New Sound Jazz Machine</a> and <a
+                            href="https://www.love-sound.nl/artiest/trip-the-light/" target="_blank">Trip the Light</a>.
+                </p>
+            </div>
+            <div class="home-image">
+                <img src="../assets/images/CousinHatfield_6481 klein.jpeg" alt="Dirk Ornee" class="profile-img">
+            </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <p>&copy; Dirk Ornee.</p>
+</footer>
+</body>
+</html>

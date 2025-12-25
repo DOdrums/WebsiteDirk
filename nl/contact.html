@@ -1,53 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Dirk Ornee</title>
-    <meta name="description" content="Feel free to reach out for sessions, mixing, or any other inquiries.">
+    <meta name="description" content="Neem gerust contact op voor sessies, mixing of andere vragen.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dirkornee.com/contact.html">
+    <meta property="og:url" content="https://dirkornee.nl/nl/contact.html">
     <meta property="og:title" content="Contact | Dirk Ornee">
-    <meta property="og:description" content="Feel free to reach out for sessions, mixing, or any other inquiries.">
-    <meta property="og:image" content="https://dirkornee.com/assets/images/CousinHatfield_6481%20klein.jpeg">
+    <meta property="og:description" content="Neem gerust contact op voor sessies, mixing of andere vragen.">
+    <meta property="og:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dirkornee.com/contact.html">
+    <meta property="twitter:url" content="https://dirkornee.nl/nl/contact.html">
     <meta property="twitter:title" content="Contact | Dirk Ornee">
-    <meta property="twitter:description" content="Feel free to reach out for sessions, mixing, or any other inquiries.">
-    <meta property="twitter:image" content="https://dirkornee.com/assets/images/CousinHatfield_6481%20klein.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/Logo White.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/Logo White.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/Logo White.png">
-    <link rel="stylesheet" href="style.css">
+    <meta property="twitter:description" content="Neem gerust contact op voor sessies, mixing of andere vragen.">
+    <meta property="twitter:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
+    <link rel="canonical" href="https://dirkornee.nl/nl/contact.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/Logo White.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/Logo White.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/Logo White.png">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
           rel="stylesheet">
 </head>
 <body>
+<div class="lang-switcher" aria-label="Language Selector">
+    <a href="#" class="active" onclick="setLanguage('nl')">NL</a>
+    <span>|</span>
+    <a href="#" onclick="setLanguage('en')">EN</a>
+</div>
 <nav>
     <a href="index.html"><i class="fas fa-home"></i></a>
     <a href="work.html"><i class="fas fa-folder"></i></a>
     <a href="contact.html" class="active"><i class="fas fa-envelope"></i></a>
     <a href="instagram.html"><i class="fab fa-instagram"></i></a>
 </nav>
+<script>
+    function setLanguage(lang) {
+        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        window.location.href = '../' + lang + '/' + currentPage;
+    }
+</script>
 <div class="container">
 
     <main>
-        <h1>Contact Me</h1>
-        <h4 style="margin-bottom: 20px;">Feel free to reach out for sessions, mixing, or any other inquiries.</h4>
+        <h1>Neem contact op</h1>
+        <h4 style="margin-bottom: 20px;">Neem gerust contact op voor sessies, mixing of andere vragen.</h4>
 
         <form id="contact-form">
             <div class="form-row">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <input type="email" id="from_email" name="from_email" placeholder="Email" required>
+                <input type="text" id="name" name="name" placeholder="Naam" required>
+                <input type="email" id="from_email" name="from_email" placeholder="E-mail" required>
             </div>
-            <input type="text" id="subject" name="subject" placeholder="Subject">
-            <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" id="subject" name="subject" placeholder="Onderwerp">
+            <textarea id="message" name="message" rows="6" placeholder="Bericht" required></textarea>
+            <button type="submit">Bericht versturen</button>
         </form>
 
         <script>
@@ -55,7 +68,7 @@
                 event.preventDefault();
 
                 const btn = this.querySelector('button');
-                btn.textContent = 'Sending...';
+                btn.textContent = 'Verzenden...';
                 btn.disabled = true;
 
                 const data = {
@@ -78,7 +91,7 @@
                     }
                 }).then(function (response) {
                     if (response.ok) {
-                        alert('Your mail is sent!');
+                        alert('Je bericht is verzonden!');
                         document.getElementById('contact-form').reset();
                     } else {
                         return response.text().then(text => {
@@ -86,9 +99,9 @@
                         });
                     }
                 }).catch(function (error) {
-                    alert('Oops... ' + error.message);
+                    alert('Oeps... ' + error.message);
                 }).finally(function () {
-                    btn.textContent = 'Send Message';
+                    btn.textContent = 'Bericht versturen';
                     btn.disabled = false;
                 });
             });

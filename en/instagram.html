@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram | Dirk Ornee</title>
+    <meta name="description" content="Follow @dirkornee on Instagram.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dirkornee.nl/instagram.html">
+    <meta property="og:title" content="Instagram | Dirk Ornee">
+    <meta property="og:description" content="Follow @dirkornee on Instagram.">
+    <meta property="og:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dirkornee.nl/instagram.html">
+    <meta property="twitter:title" content="Instagram | Dirk Ornee">
+    <meta property="twitter:description" content="Follow @dirkornee on Instagram.">
+    <meta property="twitter:image" content="https://dirkornee.nl/assets/images/CousinHatfield_6481%20klein.jpeg">
+    <link rel="canonical" href="https://dirkornee.nl/en/instagram.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/Logo White.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/Logo White.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/Logo White.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="lang-switcher" aria-label="Language Selector">
+    <a href="#" onclick="setLanguage('nl')">NL</a>
+    <span>|</span>
+    <a href="#" class="active" onclick="setLanguage('en')">EN</a>
+</div>
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="work.html"><i class="fas fa-folder"></i></a>
+    <a href="contact.html"><i class="fas fa-envelope"></i></a>
+    <a href="instagram.html" class="active"><i class="fab fa-instagram"></i></a>
+</nav>
+<script>
+    function setLanguage(lang) {
+        document.cookie = "lang=" + lang + "; path=/; max-age=" + (60 * 60 * 24 * 365);
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        window.location.href = '../' + lang + '/' + currentPage;
+    }
+</script>
+<div class="container">
+
+    <main>
+        <div class="instagram-footer">
+            <a href="https://www.instagram.com/dirkornee/" target="_blank" class="button insta-btn">
+                <i class="fab fa-instagram"></i> Follow @dirkornee
+            </a>
+        </div>
+        <div class="instagram-grid">
+            <div class="insta-item">
+                <a href="https://www.instagram.com/p/Cz3R0v8tlIm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                   target="_blank"><img
+                        src="../assets/images/instagram/trip-the-light.jpg" alt="Photo of trip the light (band)"></a>
+            </div>
+            <div class="insta-item">
+                <a href="https://www.instagram.com/p/C0cMq32MVOh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                   target="_blank"><img
+                        src="../assets/images/instagram/album-cover.jpg"
+                        alt="Album cover of christmas album from New Sound Jazz Machine"></a>
+            </div>
+            <div class="insta-item">
+                <a href="https://www.instagram.com/p/By2wUx8IboW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                   target="_blank"><img
+                        src="../assets/images/instagram/trommel.jpg"
+                        alt="Photo of Dirk as a baby with a drum"></a>
+            </div>
+            <div class="insta-item">
+                <a href="https://www.instagram.com/p/CEP7_QNseps/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                   target="_blank"><img
+                        src="../assets/images/instagram/soultriggers.jpg"
+                        alt="Photo of Dirk drumming with the Soultriggers"></a>
+            </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <p>&copy; Dirk Ornee.</p>
+</footer>
+</body>
+</html>

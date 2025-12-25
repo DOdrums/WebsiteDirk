@@ -57,10 +57,41 @@ a {
     overflow: hidden;
 }
 
+
 /* Navigation */
 nav {
     display: flex;
     justify-content: center;
+}
+
+.lang-switcher {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+.lang-switcher a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.lang-switcher a:hover, .lang-switcher a.active {
+    color: #ffffff;
+}
+
+.lang-switcher span {
+    color: rgba(255, 255, 255, 0.4);
+    cursor: default;
 }
 
 nav a {
@@ -129,7 +160,7 @@ h2 {
     padding: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
 }
 
@@ -152,7 +183,7 @@ h2 {
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 4px;
 }
 
@@ -165,29 +196,29 @@ h2 {
 }
 
 .work-item h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     color: var(--heading-color);
     font-weight: 400;
 }
 
 /* Work Page */
 .work-intro {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .work-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 .work-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .work-item iframe, .work-item audio {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* Contact Page */
@@ -295,6 +326,7 @@ button:hover {
 footer {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -335,8 +367,10 @@ footer a {
         padding: 40px 20px;
     }
 
-    .home-page .container {
+    .home-page .container, .instagram-page .container, .work-page .container {
         min-height: calc(100vh - 20px);
+        height: auto;
+        overflow-y: visible;
     }
 
     .home-grid {
@@ -346,14 +380,44 @@ footer a {
     }
 
     .home-text {
-        max-height: 24%;
+        height: auto;
         padding: 40px 20px;
         text-align: center;
+    }
+
+    .home-image {
+        height: auto;
+    }
+
+    .profile-img {
+        height: auto;
+        margin-top: 0;
     }
 
     nav a {
         padding: 20px 25px;
         font-size: 1.8rem;
+    }
+
+    .lang-switcher {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        justify-content: center;
+        font-size: 0.85rem;
+    }
+
+    .lang-switcher a {
+        color: var(--nav-icon-color);
+    }
+
+    .lang-switcher a:hover, .lang-switcher a.active {
+        color: var(--nav-icon-active);
+    }
+
+    .lang-switcher span {
+        color: var(--nav-icon-color);
     }
 
     button, .button {
